@@ -1,0 +1,82 @@
+/* Définition des polices personnalisées */
+@font-face{font-family: 'shikhand'; src: url('polices/shikhand/Shrikhand-Regular.ttf') format('truetype');         
+    font-weight: normal; font-style: normal;}
+
+@font-face{font-family: 'roboto'; src: url('polices/shikhand/Roboto-Regular.ttf') format('truetype');         
+    font-weight: normal; font-style: normal;}
+
+/* Eléments principaux de la page */
+body{font-family: 'roboto', Arial, sans-serif;}
+.logo,.banierre h1,.banierre h2,.section1 h2,.section2 h2,.section2 h3,.pied h2{font-family: 'shikhand', Arial, sans-serif;}
+
+/* Header */
+.logo{text-align: center;}
+.logo img{padding:25px;width: 280px; }
+
+/*banniére*/
+.banierre{background: #F6F6F6}
+.banierre input{color:#575757;font-size: 1.6em;font-weight: bold;padding: 20px;border-width: 0;text-align: center;
+background: linear-gradient(#DDD,#EAEAEA);display: block;width: 100%}
+.banierre h1{font-size: 2em;font-weight:bold;padding:30px 0px 20px 20px;text-align: center}
+.banierre h2{font-size:  1.4em;opacity: 0.6;text-align: center}
+.boutton{width: 280px;margin:20px auto;}
+.banierre button{font-size: 1.2em; color:#fff;background: linear-gradient(#E570DA,#A85DDC);border-width:0;padding: 20px;border-radius: 25px;
+width: 280px;margin-bottom: 40px;}
+
+/*section1 fonctionnement*/
+.fonctionnement h2{font-size: 2em;font-weight:bold;padding:15px;}
+.fonctionnement li{font-size: 1em;font-weight: bold;padding:20px 10px 20px 0;border-width: 0; margin:25px;border-radius: 25px;
+background: #F6F6F6;box-shadow: 2px 2px 5px #000;width: 350px}
+.chiffre{display: inline-block;background:#9356DC;padding:10px;border-radius: 50%;transform: translateX(-25px); }
+.fonctionnement span{margin-left:10px}
+
+/*section2*/
+.section2{background:#F6F6F6;margin-top: 60px;overflow: hidden;}
+.section2 h2{font-size: 2em;font-weight:bold;padding:15px;}
+.section2 img{width: 300px;height: 300px;border-radius: 25px 25px 0 0 }
+.section2 h3{font-size: 1em;font-weight:900;padding:15px 0 0 15px;}
+.section2 p{padding:15px 0 25px 15px;font-size: 1em;opacity:0.6;}
+.images{background: #fff;width: 300px;margin:30px auto;border-radius: 25px}
+		/*Icon*/
+.images{position: relative}
+.coeur{display: inline-block;position: absolute;top:320px;right: 30px;opacity: 0.6;font-size: 1.6em;transition: 1s}
+.coeur:hover{cursor: pointer;background: #BB63DB}
+
+/* Footer */
+.pied{background: #353535;overflow: hidden;}
+.pied h2{color:#fff;font-size: 2em;font-style: italic;padding:20px 0 20px 15px;}
+.pied li{color:#fff;font-size: 1.4em;margin-bottom: 20px;padding-left: 15px;}
+
+
+
+
+
+
+.main{display: flex;flex-flow: row wrap;}
+.logo,.pied,.section1,.section2,.banierre{flex:1 100%;}
+
+
+
+@media all and ( min-width: 780px ){
+	.logo,.banierre{flex:1 auto;}
+	.section1{flex:2 0;}
+	.fonctionnement ul {display: flex;flex-wrap: wrap;justify-content: space-between;}	
+	.lg{display: flex;flex-wrap: wrap;justify-content: space-around;}
+	.fonctionnement{display: flex;flex-flow: row wrap;justify-content: space-around;align-items: center;}
+	
+
+	.pied{display: flex;flex-flow: row wrap;justify-content: space-around;}
+	.pied ul{padding-top: 20px}
+
+
+	}
+
+	
+	
+
+
+
+	
+
+
+
