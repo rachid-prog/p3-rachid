@@ -44,7 +44,7 @@ background: #F6F6F6;box-shadow: 2px 2px 5px #000;width: 345px;}
 .coeur:active{cursor: pointer;background: #BB63DB}
 
 /* Footer */
-.pied{background: #353535;overflow: hidden;}
+.pied{background: #353535;}
 .pied h2{color:#fff;font-size: 2em;font-style: italic;padding:20px 0 20px 15px;}
 .pied li{color:#fff;font-size: 1.4em;margin-bottom: 20px;padding-left: 15px;}
 
