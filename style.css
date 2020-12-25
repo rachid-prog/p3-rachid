@@ -14,9 +14,10 @@ body{font-family: 'roboto', Arial, sans-serif;}
 .logo img{padding:25px;width: 280px; }
 
 /*banniére*/
-.banierre{background: #F6F6F6}
+.banierre{background: #F6F6F6;position:relative;}
 .banierre input{color:#575757;font-size: 1.6em;font-weight: bold;padding: 20px;border-width: 0;text-align: center;
 background: linear-gradient(#DDD,#EAEAEA);display: block;width: 100%}
+.banierre .position{position:absolute;transform: translate(50px,-45px);}
 .banierre h1{font-size: 2em;font-weight:bold;padding:30px 0px 20px 20px;text-align: center}
 .banierre h2{font-size:  1.4em;opacity: 0.6;text-align: center}
 .boutton{width: 280px;margin:20px auto;}
@@ -42,6 +43,7 @@ background: #F6F6F6;box-shadow: 2px 2px 5px #000;width: 345px;}
 .images{position: relative}
 .coeur{display: inline-block;position: absolute;top:320px;right: 30px;opacity: 0.6;font-size: 1.6em;transition: 2s}
 .coeur:active{cursor: pointer;background: #BB63DB}
+.nouveau{position: absolute;right: 20px;top:15px;color:#0A8D6D;background: #99E2D0;border-width:0;border-radius: 2px;padding:10px;font-weight: bold}
 
 /* Footer */
 .pied{background: #353535;}
