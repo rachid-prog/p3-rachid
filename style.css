@@ -5,6 +5,8 @@
 @font-face{font-family: 'roboto'; src: url('polices/shikhand/Roboto-Regular.ttf') format('truetype');         
     font-weight: normal; font-style: normal;}
 
+@font-face{font-family: 'Gravitas_One'; src: url('polices/courgette/GravitasOne-Regular.ttf') format('truetype');         
+    font-weight: normal; font-style: normal;}
 /* Eléments principaux de la page */
 body{font-family: 'roboto', Arial, sans-serif;}
 .logo,.banierre h1,.banierre h2,.section1 h2,.section2 h2,.section2 h3,.pied h2{font-family: 'shikhand', Arial, sans-serif;}
@@ -20,10 +22,10 @@ background: linear-gradient(#DDD,#EAEAEA);display: block;width: 100%}
 .banierre .position{position:absolute;transform: translate(50px,-45px);}
 .banierre h1{font-size: 2em;font-weight:bold;padding:30px 0px 20px 20px;text-align: center}
 .banierre h2{font-size:  1.4em;opacity: 0.6;text-align: center}
-.boutton{width: 280px;margin:20px auto;}
-.banierre button{font-size: 1.2em; color:#fff;background: linear-gradient(#E570DA,#A85DDC);border-width:0;padding: 20px;border-radius: 25px;
+.btn{width: 280px;margin:20px auto;}
+.boutton{font-size: 1.2em; color:#fff;background: linear-gradient(#E570DA,#A85DDC);border-width:0;padding: 20px;border-radius: 25px;
 width: 280px;margin-bottom: 40px;opacity: 0.8;transition: .1s}
-.banierre button:hover{opacity:1;}
+.boutton:hover{opacity:1;}
 
 /*section1 fonctionnement*/
 .fonctionnement h2{font-size: 2em;font-weight:bold;padding:15px;}
@@ -43,24 +45,88 @@ background: #F6F6F6;box-shadow: 2px 2px 5px #000;width: 345px;}
 .images{position: relative}
 .coeur{display: inline-block;position: absolute;top:320px;right: 30px;opacity: 0.6;font-size: 1.6em;transition: 2s}
 .coeur:active{cursor: pointer;background: #BB63DB}
-.nouveau{position: absolute;right: 20px;top:15px;color:#0A8D6D;background: #99E2D0;border-width:0;border-radius: 2px;padding:10px;font-weight: bold}
+.nouveau{position: absolute;right: 20px;top:15px;color:#0A8D6D;background: #99E2D0;border-width:0;border-radius: 2px;padding:10px;font-weight: }
 
 /* Footer */
 .pied{background: #353535;}
 .pied h2{color:#fff;font-size: 2em;font-style: italic;padding:20px 0 20px 15px;}
 .pied li{color:#fff;font-size: 1.4em;margin-bottom: 20px;padding-left: 15px;}
 
-
-
-
-
-
+/*flex*/
 .main{display: flex;flex-flow: row wrap;}
 .logo,.pied,.section1,.section2,.banierre{flex:1 100%;}
 
+/*la francaise*/
+	/*header*/
+.page{display: flex;justify-content:space-around;}
+.page p{align-self: center;font-size: 1.6em;opacity: 0.6}
+	/*banierre*/
+.francaise{position: relative;}
+.francaise img{width: 410px;}
+.francaise h1{position: absolute;bottom: 0;left: 0;right: 0;background:silver;
+border-radius: 25px 25px 0 0;font-style:oblique;display: flex;justify-content: space-between;}
+.francaise span:nth-child(2){text-align: left;margin-right: 40px;opacity:.6;}
+/*section1*/
+.section1{background: silver;display: flex;flex-flow: row wrap}
+.entrees,.plats,.desserts{flex:1 100%;}
+.titre h2{opacity:.6;padding:20px 0 0px 16px;}
+.ligne{display: inline-block;width: 60px;background:#99E2D0;height: 4px;
+margin:6px 0 25px 16px}
+.prix h3{font-size:1.2em;margin: 10px 0 5px 15px}
+.prix p{opacity:0.6;margin: 10px 0 5px 15px;display: flex;justify-content: space-between;width: 350px;}
 
+.menu1{border-width: 0px;background:#fff;width:390px;margin:20px auto;
+border-radius: 15px;}
+.menu1{display: flex;justify-content: space-between;height:80px}
+.menu1:hover{cursor: pointer;}
+.menu1:hover .cacher{display: inline-block;animation: jouer 2s both;}
+.menu1:hover .euro{ animation: 2s animation both}
+.cacher{background: #99E2D0;padding:30px;border-radius: 0 15px 15px 0;display:none}
+.accepter{display: inline-block;border:0px solid red;border-radius: 50%;background:#99E2D0;
+	color:#fff;font-size: 1.6em;animation: rotation 2s}
+
+.prix{background: #fff;width: 250px;border-radius: 25px;}	
+
+.remplacer{display: inline-block;transform: translateX(-25px);}
+.menu1:hover .remplacer1{display: none;}
+.menu1:hover .remplacer2{display: none}
+.menu1:hover .remplacer3{display: none}
+.point{display: none;transform: translateX(-50px);font-size: 1.6em}
+.menu1:hover .point{display: inline-block;animation:  aparetre 4s}
+
+.menu1{animation: monter 2s}
+@keyframes monter {
+	0%{transform: translateY(50px);opacity: 0;}
+	100%{transform: translateY(0px);opacity: 1;}
+	
+}
+
+
+@keyframes aparetre {
+	0%{opacity: 0}
+	100%{opacity: 1}
+}
+
+@keyframes animation {
+		 	
+		0%{transform: translateX(0%) ;}
+		100%{transform: translateX(-360%);}	
+
+			
+		}
+
+		@keyframes jouer {
+			0%{transform: translateX(60%) scale(1) ;}
+			100%{transform: translateX(0%) scale(1);}			
+		}
+		@keyframes rotation {
+			0%{transform: rotate(0); ;}
+			100%{transform: rotate(-2turn);}			
+		}
+.page, .francaise,.section1,.pied,.btn{flex:1 100%;}
 
 @media all and ( min-width: 780px ){
+	.main{width: 80%;margin:auto;}
 	.logo,.banierre{flex:1 auto;}
 	.section1{flex:2 0;}
 	.fonctionnement ul {display: flex;flex-wrap: wrap;justify-content: space-between;}	
@@ -68,10 +134,23 @@ background: #F6F6F6;box-shadow: 2px 2px 5px #000;width: 345px;}
 	.fonctionnement{display: flex;flex-flow: row wrap;justify-content: space-around;align-items: center;}
 	.coeur:hover{cursor: pointer;background: #BB63DB}
 
+	.page{justify-content: center}
+	.francaise h1{text-align: center}
+	.francaise img{width: 100% ;height:400px;}
+	.francaise,.btn{flex: 1 100%}	
+	.menu div{flex:1 auto;}
+
 	.pied{display: flex;flex-flow: row wrap;justify-content: space-around;}
-	.pied ul{padding-top: 20px}
+	.pied ul{padding-top: 20px;margin: 20px;}
 
+	/*page*/
 
+	.page,.francaise{flex:100%;}
+	.entrees,.plats,.desserts{flex:1 auto;}
+
+	.explorer{width:200px;text-align: center}/*boutton page franxcaise*/
+	.francaise h1{justify-content: center}
+	
 	}
 
 	
