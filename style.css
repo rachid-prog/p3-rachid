@@ -43,8 +43,8 @@ background: #F6F6F6;box-shadow: 2px 2px 5px #000;width: 345px;}
 .images{background: #fff;width: 300px;margin:30px auto;border-radius: 25px}
 		/*Icon*/
 .images{position: relative}
-.coeur{display: inline-block;position: absolute;top:320px;right: 30px;opacity: 0.6;font-size: 1.6em;transition: 2s}
-.coeur:active{cursor: pointer;background: #BB63DB}
+.coeur{display: inline-block;position: absolute;top:320px;right: 30px;opacity: 0.6;font-size: 1.6em;transition:2s;}
+
 .nouveau{position: absolute;right: 20px;top:15px;color:#0A8D6D;background: #99E2D0;border-width:0;border-radius: 2px;padding:10px;font-weight: }
 
 /* Footer */
@@ -62,7 +62,7 @@ background: #F6F6F6;box-shadow: 2px 2px 5px #000;width: 345px;}
 .page p{align-self: center;font-size: 1.6em;opacity: 0.6}
 	/*banierre*/
 .francaise{position: relative;}
-.francaise img{width: 410px;}
+.francaise img{width:100%;}
 .francaise h1{position: absolute;bottom: 0;left: 0;right: 0;background:silver;
 border-radius: 25px 25px 0 0;font-style:oblique;display: flex;justify-content: space-between;}
 .francaise span:nth-child(2){text-align: left;margin-right: 40px;opacity:.6;}
@@ -85,15 +85,18 @@ border-radius: 15px;}
 .accepter{display: inline-block;border:0px solid red;border-radius: 50%;background:#99E2D0;
 	color:#fff;font-size: 1.6em;animation: rotation 2s}
 
-.prix{background: #fff;width: 250px;border-radius: 25px;}	
+.prix{background: #fff;width: 250px;border-radius: 25px;}
 
-.remplacer{display: inline-block;transform: translateX(-25px);}
+.page, .francaise, .section1,.pied{flex:1 100%;}
+
+
+/*animation*/
+.remplacer{display: inline-block;transform: translateX(-28px);}
 .menu1:hover .remplacer1{display: none;}
 .menu1:hover .remplacer2{display: none}
 .menu1:hover .remplacer3{display: none}
 .point{display: none;transform: translateX(-50px);font-size: 1.6em}
 .menu1:hover .point{display: inline-block;animation:  aparetre 4s}
-
 .menu1{animation: monter 2s}
 @keyframes monter {
 	0%{transform: translateY(50px);opacity: 0;}
@@ -126,7 +129,7 @@ border-radius: 15px;}
 .page, .francaise,.section1,.pied,.btn{flex:1 100%;}
 
 @media all and ( min-width: 780px ){
-	.main{width: 80%;margin:auto;}
+	
 	.logo,.banierre{flex:1 auto;}
 	.section1{flex:2 0;}
 	.fonctionnement ul {display: flex;flex-wrap: wrap;justify-content: space-between;}	
@@ -136,7 +139,8 @@ border-radius: 15px;}
 
 	.page{justify-content: center}
 	.francaise h1{text-align: center}
-	.francaise img{width: 100% ;height:400px;}
+	.francaise{text-align: center}
+	.francaise img{width:50% ;height:400px;margin-top: auto}
 	.francaise,.btn{flex: 1 100%}	
 	.menu div{flex:1 auto;}
 
@@ -150,6 +154,7 @@ border-radius: 15px;}
 
 	.explorer{width:200px;text-align: center}/*boutton page franxcaise*/
 	.francaise h1{justify-content: center}
+	
 	
 	}
 
