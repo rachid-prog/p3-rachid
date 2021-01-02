@@ -1,15 +1,16 @@
 /* Définition des polices personnalisées */
-@font-face{font-family: 'shikhand'; src: url('polices/shikhand/Shrikhand-Regular.ttf') format('truetype');         
+@font-face{font-family: 'shikhand'; src: url('polices/shrikhand/Shrikhand-Regular.ttf') format('truetype');         
     font-weight: normal; font-style: normal;}
 
-@font-face{font-family: 'roboto'; src: url('polices/shikhand/Roboto-Regular.ttf') format('truetype');         
+@font-face{font-family: 'roboto'; src: url('polices/roboto/Roboto-Regular.ttf') format('truetype');         
     font-weight: normal; font-style: normal;}
 
-@font-face{font-family: 'Gravitas_One'; src: url('polices/courgette/GravitasOne-Regular.ttf') format('truetype');         
-    font-weight: normal; font-style: normal;}
+
 /* Eléments principaux de la page */
 body{font-family: 'roboto', Arial, sans-serif;}
-.logo,.banierre h1,.banierre h2,.section1 h2,.section2 h2,.section2 h3,.pied h2{font-family: 'shikhand', Arial, sans-serif;}
+
+.pied h2{font-family: 'shikhand', Arial, sans-serif;}
+
 
 /* Header */
 .logo{text-align: center;}
@@ -20,7 +21,7 @@ body{font-family: 'roboto', Arial, sans-serif;}
 .banierre input{color:#575757;font-size: 1.6em;font-weight: bold;padding: 20px;border-width: 0;text-align: center;
 background: linear-gradient(#DDD,#EAEAEA);display: block;width: 100%}
 .banierre .position{position:absolute;transform: translate(50px,-45px);}
-.banierre h1{font-size: 2em;font-weight:bold;padding:30px 0px 20px 20px;text-align: center}
+.banierre h1{font-size: 2em;font-weight:bold;padding:30px 0px 20px 20px;text-align: center;}
 .banierre h2{font-size:  1.4em;opacity: 0.6;text-align: center}
 .btn{width: 280px;margin:20px auto;}
 .boutton{font-size: 1.2em; color:#fff;background: linear-gradient(#E570DA,#A85DDC);border-width:0;padding: 20px;border-radius: 25px;
@@ -28,12 +29,14 @@ width: 280px;margin-bottom: 40px;opacity: 0.8;transition: .1s}
 .boutton:hover{opacity:1;}
 
 /*section1 fonctionnement*/
-.fonctionnement h2{font-size: 2em;font-weight:bold;padding:15px;}
-.fonctionnement li{font-size: 1em;font-weight: bold;padding:20px 10px 20px 0;border-width: 0; margin:25px;border-radius: 25px;
-background: #F6F6F6;box-shadow: 2px 2px 5px #000;width: 345px;}
-.chiffre{display: inline-block;background:#9356DC;padding:10px;border-radius: 50%;transform: translateX(-25px); }
-.fonctionnement span{margin-left:10px}
 
+.fonctionnement h2{font-size: 2em;font-weight:bold;padding:15px;}
+.fonctionnement li{font-size: 1em;font-weight: bold;padding:20px 10px 20px 0;border-width: 0; margin:25px;
+	border-radius: 25px;background: #F6F6F6;box-shadow: 2px 2px 10px #000;width: 345px;}
+.chiffre{color:#fff;display: inline-block;background:#9356DC;padding:10px;border-radius: 50%;transform: translateX(-25px); }
+.fonctionnement span{margin-left:10px}
+.choix{font-size: 1.4em;opacity:0.6;}
+.active{color:#9356DC;}
 /*section2*/
 .section2{background:#F6F6F6;margin-top: 60px;overflow: hidden;}
 .section2 h2{font-size: 2em;font-weight:bold;padding:15px;}
@@ -44,8 +47,9 @@ background: #F6F6F6;box-shadow: 2px 2px 5px #000;width: 345px;}
 		/*Icon*/
 .images{position: relative}
 .coeur{display: inline-block;position: absolute;top:320px;right: 30px;opacity: 0.6;font-size: 1.6em;transition:2s;}
+.coeur:hover{background-color: #BB63DB ;border-radius: 50%}
 
-.nouveau{position: absolute;right: 20px;top:15px;color:#0A8D6D;background: #99E2D0;border-width:0;border-radius: 2px;padding:10px;font-weight: }
+.nouveau{position: absolute;right: 20px;top:15px;color:#0A8D6D;background: #99E2D0;border-width:0;border-radius: 2px;padding:10px; }
 
 /* Footer */
 .pied{background: #353535;}
@@ -63,20 +67,20 @@ background: #F6F6F6;box-shadow: 2px 2px 5px #000;width: 345px;}
 	/*banierre*/
 .francaise{position: relative;}
 .francaise img{width:100%;}
-.francaise h1{position: absolute;bottom: 0;left: 0;right: 0;background:silver;
+.francaise h1{position: absolute;bottom: 0;left: 0;right: 0;background:#F6F6F6;
 border-radius: 25px 25px 0 0;font-style:oblique;display: flex;justify-content: space-between;}
 .francaise span:nth-child(2){text-align: left;margin-right: 40px;opacity:.6;}
 /*section1*/
-.section1{background: silver;display: flex;flex-flow: row wrap}
+.section1{background: #F6F6F6;display: flex;flex-flow: row wrap}
 .entrees,.plats,.desserts{flex:1 100%;}
 .titre h2{opacity:.6;padding:20px 0 0px 16px;}
 .ligne{display: inline-block;width: 60px;background:#99E2D0;height: 4px;
 margin:6px 0 25px 16px}
-.prix h3{font-size:1.2em;margin: 10px 0 5px 15px}
+
+.prix h3{font-size:1.2em;margin: 10px 0 5px 15px;}
 .prix p{opacity:0.6;margin: 10px 0 5px 15px;display: flex;justify-content: space-between;width: 350px;}
 
-.menu1{border-width: 0px;background:#fff;width:390px;margin:20px auto;
-border-radius: 15px;}
+.menu1{background:#fff;width:390px;margin:20px auto;box-shadow: 1px 1px 6px #000;border-radius: 15px;border: 2px solid silver;}
 .menu1{display: flex;justify-content: space-between;height:80px}
 .menu1:hover{cursor: pointer;}
 .menu1:hover .cacher{display: inline-block;animation: jouer 2s both;}
@@ -85,19 +89,72 @@ border-radius: 15px;}
 .accepter{display: inline-block;border:0px solid red;border-radius: 50%;background:#99E2D0;
 	color:#fff;font-size: 1.6em;animation: rotation 2s}
 
-.prix{background: #fff;width: 250px;border-radius: 25px;}
 
 .page, .francaise, .section1,.pied{flex:1 100%;}
 
-
+.explorer{text-align: center}
 /*animation*/
-.remplacer{display: inline-block;transform: translateX(-28px);}
+.remplacer{display: inline-block;transform: translateX(-18px);}
 .menu1:hover .remplacer1{display: none;}
 .menu1:hover .remplacer2{display: none}
 .menu1:hover .remplacer3{display: none}
 .point{display: none;transform: translateX(-50px);font-size: 1.6em}
 .menu1:hover .point{display: inline-block;animation:  aparetre 4s}
 .menu1{animation: monter 2s}
+
+/*animation page*/
+.debut{width: 100px;height: 100px;position: absolute;border-radius: 50%;z-index: 2;}
+
+.debut1{top:0;left: 0;animation:adebut1 3s linear  both;background:center/cover url("images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");}
+.debut2{top:0;right: 0;animation:adebut2 3s linear both;background:center/cover url("images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");}
+.debut3{bottom:0;right: 0;animation:adebut3 3s linear both;background:center/cover url("images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");}
+.debut4{bottom:0;left: 0;animation:adebut4 3s linear both;background:center/cover url("images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");}
+.acceuil{animation:4s amain;}
+
+@keyframes amain {
+	0%{opacity: 0;transition: 2s;}
+	50%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+
+@keyframes adebut1 {
+	0%{transform: translate(0) rotate(1turn);}
+	50%{transform: translate(100%);}	
+	90%{transform: translate(100%,200%);}
+	100%{transform: translate(-100%,200%);}
+	}
+@keyframes adebut2 {
+	0%{transform: translate(0) rotate(1turn);}
+	50%{transform: translate(-100%);}
+	90%{transform: translate(-100%,200%);}
+	100%{transform: translate(100%,200%);}
+
+	}
+
+@keyframes adebut3 {
+	0%{transform: translate(0) rotate(-1turn);}
+	50%{transform: translate(-100%);}
+	90%{transform: translate(-100%,-200%);}
+	100%{transform: translate(100%,-200%);}
+	}
+
+@keyframes adebut4 {
+	0%{transform: translate(0) rotate(-1turn);}
+	50%{transform: translate(100%);}
+	90%{transform: translate(100%,-200%);}
+	100%{transform: translate(-100%,-200%);}
+	}
+
+
+/*Fin de l'animation*/
+
+
+
+
+
+
+
 @keyframes monter {
 	0%{transform: translateY(50px);opacity: 0;}
 	100%{transform: translateY(0px);opacity: 1;}
@@ -119,8 +176,8 @@ border-radius: 15px;}
 		}
 
 		@keyframes jouer {
-			0%{transform: translateX(60%) scale(1) ;}
-			100%{transform: translateX(0%) scale(1);}			
+			0%{transform: translateX(10%) scale(1.1) ;}
+			100%{transform: translateX(-70%) scale(1.1);}			
 		}
 		@keyframes rotation {
 			0%{transform: rotate(0); ;}
@@ -129,13 +186,14 @@ border-radius: 15px;}
 .page, .francaise,.section1,.pied,.btn{flex:1 100%;}
 
 @media all and ( min-width: 780px ){
-	
+	.banierre span{margin-left: 50px;}
 	.logo,.banierre{flex:1 auto;}
 	.section1{flex:2 0;}
 	.fonctionnement ul {display: flex;flex-wrap: wrap;justify-content: space-between;}	
 	.lg{display: flex;flex-wrap: wrap;justify-content: space-around;}
 	.fonctionnement{display: flex;flex-flow: row wrap;justify-content: space-around;align-items: center;}
-	.coeur:hover{cursor: pointer;background: #BB63DB}
+	.coeur{border-radius: 50%}
+	.coeur:hover{cursor: pointer;background-color:  #BB63DB;}
 
 	.page{justify-content: center}
 	.francaise h1{text-align: center}
@@ -155,7 +213,42 @@ border-radius: 15px;}
 	.explorer{width:200px;text-align: center}/*boutton page franxcaise*/
 	.francaise h1{justify-content: center}
 	
-	
+	.titre{text-align: center}
+
+	.coeur1{transition: 2s;}
+	.coeur1:hover{background-color: #BB63DB ;border-radius: 50%}
+
+
+
+
+	@keyframes adebut1 {
+	0%{transform: translateY(0) rotate(1turn);}
+	50%{transform: translate(500%) ;}	
+	90%{transform: translate(500%,200%) scale(2);}
+	100%{transform: translate(-500%,200%) scale(2);}
+	}
+@keyframes adebut2 {
+	0%{transform: translate(0) rotate(1turn);}
+	50%{transform: translate(-500%);}
+	90%{transform: translate(-500%,200%) scale(2);}
+	100%{transform: translate(500%,200%) scale(2);}
+
+	}
+
+@keyframes adebut3 {
+	0%{transform: translate(0) rotate(-1turn);}
+	50%{transform: translate(-500%);}
+	90%{transform: translate(-500%,-200%) scale(2);}
+	100%{transform: translate(500%,-200%) scale(2);}
+	}
+
+@keyframes adebut4 {
+	0%{transform: translate(0) rotate(-1turn);}
+	50%{transform: translate(500%);}
+	90%{transform: translate(500%,-200%) scale(2);}
+	100%{transform: translate(-500%,-200%) scale(2);}
+	}
+
 	}
 
 	
