@@ -13,7 +13,7 @@ body{font-family: 'roboto', Arial, sans-serif;}
 .banierre{background: #F6F6F6;position:relative;}
 .banierre input{color:#575757;font-size: 1.6em;font-weight: bold;padding: 20px;border-width: 0;
 	text-align: center;background: linear-gradient(#DDD,#EAEAEA);display: inline-block;width: 100%;}
-.banierre .position{position:absolute;top:20px;left:40px;opacity:0.6;font-size: 1.4em}
+.banierre .position{position:absolute;transform: translate(50px,-45px);}
 .banierre h1{font-size: 2em;font-weight:bold;padding:30px 0px 20px 20px;text-align: center;}
 .banierre h2{font-size:  1.4em;opacity: 0.6;text-align: center}
 .btn{width: 280px;margin:20px auto;}
@@ -57,7 +57,7 @@ body{font-family: 'roboto', Arial, sans-serif;}
 .francaise img{width:100%;}
 .francaise h1{position: absolute;bottom: 0;left: 0;right: 0;background:#F6F6F6;
 	border-radius: 25px 25px 0 0;display: flex;justify-content: space-between;font-family:shikhand; }
-.francaise span:nth-child(2){text-align: left;margin-right: 40px;opacity:.6;transition: 2s;}
+.francaise span:nth-child(2){text-align: left;margin-right: 40px;opacity:.6;}
 .francaise span:nth-child(1){text-align: left;font-size: .8em}
 .francaise span:nth-child(2):hover{background-color: #BB63DB;border-radius: 50%}
 /*section1*/
@@ -118,26 +118,26 @@ body{font-family: 'roboto', Arial, sans-serif;}
 @keyframes adebut1 {
 	0%{transform: translate(0) rotate(1turn);}
 	50%{transform: translate(80%);}	
-	90%{transform: translate(80%,200%);opacity:1;}
-	100%{transform: translate(-100%,200%);opacity:0;}
+	90%{transform: translate(80%,200%);}
+	100%{transform: translate(-100%,200%);}
 }
 @keyframes adebut2 {
 	0%{transform: translate(0) rotate(1turn);}
 	50%{transform: translate(-80%);}
-	90%{transform: translate(-80%,200%);opacity:1;}
-	100%{transform: translateY(200%);opacity:0;}
+	90%{transform: translate(-80%,200%);}
+	100%{transform: translate(100%,200%);}
 }
 @keyframes adebut3 {
 	0%{transform: translate(0) rotate(-1turn);}
 	50%{transform: translate(-80%);}
-	90%{transform: translate(-80%,-200%);opacity:1;}
-	100%{transform: translateY(-200%);opacity:0;}
+	90%{transform: translate(-80%,-200%);}
+	100%{transform: translate(100%,-200%);}
 }
 @keyframes adebut4 {
 	0%{transform: translate(0) rotate(-1turn);}
 	50%{transform: translate(80%);}
-	90%{transform: translate(80%,-200%);opacity:1;}
-	100%{transform: translate(-100%,-200%);opacity:0;}
+	90%{transform: translate(80%,-200%);}
+	100%{transform: translate(-100%,-200%);}
 }
 /*Fin de l'animation*/
 @keyframes monter {
@@ -188,33 +188,33 @@ body{font-family: 'roboto', Arial, sans-serif;}
 	.titre{text-align: center}
 	.coeur1{transition: 2s;}
 	.coeur1:hover{background-color: #BB63DB ;border-radius: 50%}
-	@keyframes adebut1 {
+	/*@keyframes adebut1 {
 		0%{transform: translateY(0) rotate(1turn);}
 		50%{transform: translate(500%) ;}	
 		90%{transform: translate(500%,200%) scale(2);}
 		100%{transform: translate(-500%,200%) scale(2);}
-	}
+	}*/
 	@keyframes adebut2 {
 		0%{transform: translate(0) rotate(1turn);}
-		50%{transform: translate(-500%);}
+		50%{transform: translateX(-500%);}
 		90%{transform: translate(-500%,200%) scale(2);}
 		100%{transform: translate(500%,200%) scale(2);}
 	}
-	@keyframes adebut3 {
+	/*@keyframes adebut3 {
 		0%{transform: translate(0) rotate(-1turn);}
 		50%{transform: translate(-500%);}
 		90%{transform: translate(-500%,-200%) scale(2);}
 		100%{transform: translate(500%,-200%) scale(2);}
-	}
+	}*/
 
-	@keyframes adebut4 {
+	/*@keyframes adebut4 {
 		0%{transform: translate(0) rotate(-1turn);}
 		50%{transform: translate(500%);}
 		90%{transform: translate(500%,-200%) scale(2);}
 		100%{transform: translate(-500%,-200%) scale(2);}
 	}
 }
-
+*/
 	
 
 
