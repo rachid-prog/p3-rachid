@@ -13,7 +13,7 @@ body{font-family: 'roboto', Arial, sans-serif;}
 .banierre{background: #F6F6F6;position:relative;}
 .banierre input{color:#575757;font-size: 1.6em;font-weight: bold;padding: 20px;border-width: 0;
 	text-align: center;background: linear-gradient(#DDD,#EAEAEA);display: inline-block;width: 100%;}
-.banierre .position{position:absolute;transform: translate(50px,-45px);}
+.banierre .position{position:absolute;top:20px;left:40px;opacity:0.6;font-size: 1.4em}
 .banierre h1{font-size: 2em;font-weight:bold;padding:30px 0px 20px 20px;text-align: center;}
 .banierre h2{font-size:  1.4em;opacity: 0.6;text-align: center}
 .btn{width: 280px;margin:20px auto;}
@@ -21,14 +21,18 @@ body{font-family: 'roboto', Arial, sans-serif;}
 	width: 280px;margin-bottom: 40px;opacity: 0.4;transition: 1s}
 .boutton:hover{opacity:1;}
 /*section1 fonctionnement*/
+.section1{display: flex;justify-content: center}
 .fonctionnement h2{font-size: 2em;font-weight:bold;padding:15px;}
 .fonctionnement ul{display: flex;flex-direction: column;}
 .fonctionnement li{font-size: 1em;font-weight: bold;padding:20px 10px 20px 0;border-width: 0; margin:25px;
-	border-radius: 25px;background: #F6F6F6;box-shadow: 2px 2px 10px #000;}
+	border-radius: 25px;background: #F6F6F6;box-shadow: 2px 2px 10px #000;transition: 2s;box-shadow: 0px 0px 4px #000}
+.fonctionnement li:hover{background: rgba( 147,86,220,0.4);}
+.active{transition: 2s;}
+.fonctionnement li:hover .active{color:#9356DC;}	
 .chiffre{color:#fff;display: inline-block;background:#9356DC;padding:10px;border-radius: 50%;transform: translateX(-25px); }
 .fonctionnement span{margin-left:10px}
 .choix{font-size: 1.4em;opacity:0.6;}
-.active{color:#9356DC;}
+
 /*section2*/
 .section2{background:#F6F6F6;margin-top: 60px;overflow: hidden;}
 .section2 h2{font-size: 2em;font-weight:bold;padding:15px;}
@@ -38,9 +42,9 @@ body{font-family: 'roboto', Arial, sans-serif;}
 .images{background: #fff;width: 300px;margin:30px auto;border-radius: 25px}
 		/*Icon*/
 .images{position: relative}
-.coeur{display: inline-block;position: absolute;top:320px;right: 30px;opacity: 0.6;font-size: 1.6em;transition:2s;}
-.coeur:hover{background-color: #BB63DB ;border-radius: 50%;}
-.nouveau{position: absolute;right: 20px;top:15px;color:#0A8D6D;background: #99E2D0;border-width:0;border-radius: 2px;padding:10px; }
+.coeur{display: inline-block;position: absolute;top:320px;right: 30px;opacity: 0.6;font-size: 1.6em;transition:3s;}
+.coeur:hover{background: center/cover url("images/svg/2.svg"); }
+.nouveau{position: absolute;right: 20px;top:15px;color:#0A8D6D;background: #99E2D0;border-width:0;border-radius: 2px;padding:10px;}
 /* Footer */
 .pied{background: #353535;}
 .pied h2{color:#fff;font-size: 2em;font-style: italic;padding:20px 0 20px 15px;}
@@ -57,9 +61,10 @@ body{font-family: 'roboto', Arial, sans-serif;}
 .francaise img{width:100%;}
 .francaise h1{position: absolute;bottom: 0;left: 0;right: 0;background:#F6F6F6;
 	border-radius: 25px 25px 0 0;display: flex;justify-content: space-between;font-family:shikhand; }
-.francaise span:nth-child(2){text-align: left;margin-right: 40px;opacity:.6;}
+	
+.francaise span:nth-child(2){text-align: left;margin-right: 40px;opacity:.6;transition: 2s;padding-left: 2px;}
 .francaise span:nth-child(1){text-align: left;font-size: .8em}
-.francaise span:nth-child(2):hover{background-color: #BB63DB;border-radius: 50%}
+.francaise span:nth-child(2):hover{background: center/cover url("images/svg/2.svg");}
 /*section1*/
 .section1{background: #F6F6F6;display: flex;flex-flow: row wrap}
 .entrees,.plats,.desserts{flex:1 100%;}
@@ -67,15 +72,16 @@ body{font-family: 'roboto', Arial, sans-serif;}
 .ligne{display: inline-block;width: 60px;background:#99E2D0;height: 4px;
 	margin:6px 0 25px 16px}
 .euro{transform: translateX(-10px);}
+
 .prix h3{font-size:1.2em;margin: 10px 0 5px 15px;}
 .prix p{opacity:0.6;margin: 10px 0 5px 15px;display: flex;justify-content: space-between;width: 338px;}
-.menu1{width:350px;margin:20px auto;box-shadow: 1px 1px 6px #000;border-radius: 15px;
-	border: 2px solid silver;}
+.menu1{width:350px;margin:20px auto;border-radius: 15px;
+	border: 1px solid #fff;box-shadow: 0px 0px 2px rgba(0,0,0,0.4)}
 .menu1{display: flex;justify-content: space-between;height:80px}
 .menu1:hover{cursor: pointer;}
 .menu1:hover .cacher{display: inline-block;animation: jouer 2s both;}
 .menu1:hover .euro{ animation: 2s animation both}
-.cacher{background: #99E2D0;padding:30px;border-radius: 0 15px 15px 0;display:none}
+.cacher{background: #99E2D0;padding:30px;border-radius: 0 15px 15px 0;display:none;}
 .accepter{display: inline-block;border:0px solid red;border-radius: 50%;background:#99E2D0;
 	color:#fff;font-size: 1.6em;animation: rotation 2s;}
 .page, .francaise, .section1,.pied{flex:1 100%;}
@@ -93,10 +99,12 @@ body{font-family: 'roboto', Arial, sans-serif;}
 .deplacer5{transform: translate(-18px);}
 .deplacer6{transform: translate(-14px);}
 .deplacer7{transform: translate(-30px);}
+.deplacer10{transform: translateX(6px);}
 .menu1:hover .remplacer1{display: none;}
 .menu1:hover .remplacer2{display: none}
 .menu1:hover .remplacer3{display: none}
-.point{display: none;transform: translateX(-50px);font-size: 1.6em;}
+.point{display: none;transform: translate(-50px,-10px);font-size: 1.6em;}
+.point1{transform: translateX(15px);}
 .menu1:hover .point{display: inline-block;animation:  aparetre 4s;}
 .menu1{animation: monter 2s;}
 /*animation page*/
@@ -118,26 +126,26 @@ body{font-family: 'roboto', Arial, sans-serif;}
 @keyframes adebut1 {
 	0%{transform: translate(0) rotate(1turn);}
 	50%{transform: translate(80%);}	
-	90%{transform: translate(80%,200%);}
-	100%{transform: translate(-100%,200%);}
+	90%{transform: translate(80%,200%);opacity:1;}
+	100%{transform: translate(-100%,200%);opacity:0;}
 }
 @keyframes adebut2 {
 	0%{transform: translate(0) rotate(1turn);}
 	50%{transform: translate(-80%);}
-	90%{transform: translate(-80%,200%);}
-	100%{transform: translate(100%,200%);}
+	90%{transform: translate(-80%,200%);opacity:1;}
+	100%{transform: translateY(200%);opacity:0;}
 }
 @keyframes adebut3 {
 	0%{transform: translate(0) rotate(-1turn);}
 	50%{transform: translate(-80%);}
-	90%{transform: translate(-80%,-200%);}
-	100%{transform: translate(100%,-200%);}
+	90%{transform: translate(-80%,-200%);opacity:1;}
+	100%{transform: translateY(-200%);opacity:0;}
 }
 @keyframes adebut4 {
 	0%{transform: translate(0) rotate(-1turn);}
 	50%{transform: translate(80%);}
-	90%{transform: translate(80%,-200%);}
-	100%{transform: translate(-100%,-200%);}
+	90%{transform: translate(80%,-200%);opacity:1;}
+	100%{transform: translate(-100%,-200%);opacity:0;}
 }
 /*Fin de l'animation*/
 @keyframes monter {
@@ -154,8 +162,8 @@ body{font-family: 'roboto', Arial, sans-serif;}
 	100%{transform: translateX(-360%);}				
 }
 @keyframes jouer {
-	0%{transform: translateX(2%) scale(1.1) ;}
-	100%{transform: translateX(-100%) scale(1.1);}			
+	0%{transform: translateX(2%) scaleY(1.02);}
+	100%{transform: translateX(-100%) scaleY(1.02);}			
 }
 @keyframes rotation {
 	0%{transform: rotate(0); ;}
@@ -168,13 +176,12 @@ body{font-family: 'roboto', Arial, sans-serif;}
 	.fonctionnement ul {flex-flow: row wrap;}	
 	.lg{display: flex;flex-wrap: wrap;justify-content: space-around;}
 	.fonctionnement{display: flex;flex-flow: row wrap;justify-content: space-around;align-items: center;}
-	.coeur{border-radius: 50%}
-	.coeur:hover{cursor: pointer;background-color:  #BB63DB;}
+	
 	.page{justify-content: center}
 	.francaise h1{text-align: center}
-	.francaise h1 span:nth-child(2){transition: 2s;}
+	/*.francaise h1 span:nth-child(2){transition: 2s;}
 	.francaise h1 span:nth-child(2):hover{background:#BB63DB;border-radius: 50%}
-	.francaise{text-align: center}
+	.francaise{text-align: center}*/
 	.francaise img{width:50% ;height:400px;margin-top: auto}
 	.francaise,.btn{flex: 1 100%}	
 	.menu div{flex:1 auto;}
@@ -187,34 +194,34 @@ body{font-family: 'roboto', Arial, sans-serif;}
 	.francaise h1{justify-content: center}	
 	.titre{text-align: center}
 	.coeur1{transition: 2s;}
-	.coeur1:hover{background-color: #BB63DB ;border-radius: 50%}
-	/*@keyframes adebut1 {
+	.coeur1:hover{background: center/cover url("images/svg/2.svg"); }
+	@keyframes adebut1 {
 		0%{transform: translateY(0) rotate(1turn);}
 		50%{transform: translate(500%) ;}	
 		90%{transform: translate(500%,200%) scale(2);}
 		100%{transform: translate(-500%,200%) scale(2);}
-	}*/
+	}
 	@keyframes adebut2 {
 		0%{transform: translate(0) rotate(1turn);}
-		50%{transform: translateX(-500%);}
+		50%{transform: translate(-500%);}
 		90%{transform: translate(-500%,200%) scale(2);}
 		100%{transform: translate(500%,200%) scale(2);}
 	}
-	/*@keyframes adebut3 {
+	@keyframes adebut3 {
 		0%{transform: translate(0) rotate(-1turn);}
 		50%{transform: translate(-500%);}
 		90%{transform: translate(-500%,-200%) scale(2);}
 		100%{transform: translate(500%,-200%) scale(2);}
-	}*/
+	}
 
-	/*@keyframes adebut4 {
+	@keyframes adebut4 {
 		0%{transform: translate(0) rotate(-1turn);}
 		50%{transform: translate(500%);}
 		90%{transform: translate(500%,-200%) scale(2);}
 		100%{transform: translate(-500%,-200%) scale(2);}
 	}
 }
-*/
+
 	
 
 
