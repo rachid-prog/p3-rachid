@@ -107,7 +107,7 @@ body{font-family: 'roboto', Arial, sans-serif;}
 .point1{transform: translateX(15px);}
 .menu1:hover .point{display: inline-block;animation:  aparetre 4s;}
 .menu1{animation: monter 2s;}
-/*animation pages*/
+/*animation page*/
 .debut{width: 100px;height: 100px;position: absolute;border-radius: 50%;z-index: 2;}
 .debut1{top:0;left: 0;animation:adebut1 3s linear  both;
 	background:center/cover url("images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");}
