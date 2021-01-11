@@ -179,9 +179,9 @@ body{font-family: 'roboto', Arial, sans-serif;}
 	
 	.page{justify-content: center}
 	.francaise h1{text-align: center}
-	/*.francaise h1 span:nth-child(2){transition: 2s;}
+	.francaise h1 span:nth-child(2){transition: 2s;}
 	.francaise h1 span:nth-child(2):hover{background:#BB63DB;border-radius: 50%}
-	.francaise{text-align: center}*/
+	.francaise{text-align: center}
 	.francaise img{width:50% ;height:400px;margin-top: auto}
 	.francaise,.btn{flex: 1 100%}	
 	.menu div{flex:1 auto;}
